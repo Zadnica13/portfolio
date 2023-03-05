@@ -1,0 +1,314 @@
+ @media (max-width: 1200px) {
+   .section {
+     padding: 10vw 0;
+   }
+
+   .title {
+     margin-bottom: 5vw;
+   }
+ }
+
+ @media (max-width: 992px) {
+   .header {
+     padding-top: 0;
+   }
+
+   .burger {
+     display: block;
+   }
+
+   .header__nav {
+     padding: 15px 0;
+     transition: background-color .3s;
+   }
+
+   .header__nav.color {
+     background-color: #7792E0;
+   }
+
+   .header__nav.active {
+     background-color: #7792E0;
+   }
+
+   .header__nav.active .menu__list {
+     transform: translateX(0);
+     opacity: 1;
+   }
+
+   .menu__list {
+     position: absolute;
+     z-index: 9;
+     right: 0;
+     top: 100%;
+     max-width: 500px;
+     width: 100%;
+     height: calc(100vh - 83px);
+     overflow-y: auto;
+     flex-direction: column;
+     text-align: center;
+     gap: 0;
+     background-color: #7792E0;
+     transform: translateX(200%);
+     opacity: 0;
+     transition: transform .3s, opacity .3s;
+   }
+
+   .menu__item:not(:last-child) {
+     margin-right: 0;
+   }
+
+   .menu__link {
+     display: block;
+     padding: 11px;
+   }
+
+   .works {
+     display: grid;
+     grid-template-columns: minmax(165px, 360px) minmax(165px, 360px);
+     gap: 3vw;
+     justify-content: center;
+     margin-bottom: 49px;
+   }
+
+   .reviews__inner {
+     flex-direction: column;
+     gap: 20px;
+   }
+
+   .contacts__inner {
+     display: block;
+   }
+
+   .contacts__social {
+     margin-bottom: 30px;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .title {
+     left: 50%;
+     transform: translateX(-50%);
+   }
+
+   .portfolio__title,
+   .reviews__title {
+     left: 0;
+     transform: unset;
+   }
+
+   .portfolio-nav {
+     flex-direction: column;
+     justify-content: center;
+     margin-bottom: 30px;
+   }
+
+   .portfolio-nav__item:not(:last-child) {
+     margin-right: 0;
+     margin-bottom: 15px;
+   }
+
+   .reviews__list {
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 20px
+   }
+
+   .reviews__card {
+     margin-right: 0;
+     background-size: 40px;
+     background-position: center top 25px;
+     padding: 80px 15px 25px;
+     max-width: 165px;
+   }
+
+   .reviews__card p {
+     font-size: 14px;
+   }
+
+   .reviews__card span {
+     font-size: 30px;
+   }
+ }
+
+ @media (max-width: 576px) {
+   .section {
+     padding: 50px 0;
+   }
+
+   .title {
+     margin-bottom: 30px;
+   }
+
+   .logo {
+     width: 110px;
+   }
+
+   .header__bottom {
+     bottom: -17px;
+     transform: translateX(-54%);
+   }
+
+   .header__bottom-link {
+     font-size: 14px;
+   }
+
+   .about__text p {
+     font-size: 16px;
+   }
+
+   .about__text p:not(:last-child) {
+     margin-bottom: 20px;
+   }
+
+   .skills__inner {
+     grid-template-columns: unset;
+     padding: 0 22.5px;
+     justify-content: center;
+   }
+
+   .skills__item {
+     display: block;
+     margin-bottom: 17px;
+     text-align: center;
+   }
+
+   .skills__text {
+     display: block;
+     margin-bottom: 5px;
+   }
+
+   .services__card {
+     max-width: 500px;
+     padding-top: 50px;
+     background-size: 40px;
+   }
+
+   .card__title {
+     font-size: 20px;
+     margin-bottom: 15px;
+   }
+
+   .card__text {
+     max-width: 100%;
+   }
+
+   .portfolio {
+     padding-top: 13px;
+   }
+
+   .portfolio-nav__btn {
+     font-size: 18px;
+   }
+
+   .works {
+     margin-bottom: 16px;
+   }
+
+   .reviews__inner {
+     position: relative;
+   }
+
+   .reviews-user__avatar img {
+     margin-bottom: 30px;
+   }
+
+   .reviews-user__name {
+     font-size: 20px;
+   }
+
+   .reviews-user__text p {
+     font-size: 16px;
+     width: 333px;
+   }
+
+   .reviews-video {
+     position: absolute;
+     top: 90px;
+     left: 50%;
+     transform: translateX(42%);
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+   }
+
+   .reviews-video::after {
+     transform: translate(-50%, -50%) scale(.2);
+   }
+
+   .reviews__list {
+     gap: 15px;
+   }
+
+   .reviews__card {
+     max-width: 165px;
+     background-size: 40px;
+     padding-top: 78px;
+     padding-bottom: 25px;
+     background-position: center top 25px;
+   }
+
+   .reviews__card--client {
+     padding-top: 68px;
+   }
+
+   .reviews__card--client p {
+     margin-bottom: 11px;
+   }
+
+   .reviews__card--coffe,
+   .reviews__card--review {
+     background-position: center top 20px;
+     background-size: 35px;
+     padding-top: 63px;
+   }
+
+   .reviews__card--coffe p {
+     margin-bottom: 13px;
+   }
+
+   .reviews__card--review {
+     padding-top: 71px;
+   }
+
+   .reviews__card span {
+     font-size: 30px;
+   }
+
+   .contacts {
+     padding-top: 0px;
+   }
+
+   .contacts__info {
+     margin-right: 0;
+   }
+
+   .contacts__info p {
+     margin-bottom: 30px;
+   }
+
+   .contacts__list {
+     margin-bottom: 30px;
+   }
+
+   .form__inputs {
+     display: block;
+     margin-bottom: 10px;
+   }
+
+   .form__input {
+     width: 100%;
+   }
+
+   .form__name {
+     margin-right: 0;
+     margin-bottom: 10px;
+   }
+
+   .form__message {
+     margin-bottom: 9px;
+   }
+
+   .footer {
+     padding: 33px 0;
+   }
+ }
